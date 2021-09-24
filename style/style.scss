@@ -1,0 +1,62 @@
+$darker-color:#2C2C38;
+$dark-color:#373741;
+$pr-color:#8DC53F;
+$wireless-color:#f7b577;
+$smart-color:#27BFA2;
+$camera-color:#0DAFDB;
+$alarm-color:#636BE0;
+$fire-color: #EE817B;
+
+@font-face {
+    font-family: Yekan;
+    src: url('../font/Yekan.eot');
+    src: url('../font/Yekan.eot?#iefix') format('embedded-opentype'),
+    url('../font/Yekan.woff2') format('woff2'),
+    url('../font/Yekan.woff') format('woff'),
+    url('../font/Yekan.otf') format('opentype'),
+    url('../font/Yekan.ttf') format('truetype'),
+    url('../font/Yekan.svg#Yekan') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: rtl;
+    font-family: Yekan;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-family: Yekan;
+
+}
+ul{
+    list-style: none;
+}
+body{
+    width: 100vw;
+}
+p{
+    line-height: 30px;
+}
+
+main{
+    padding: 0 10vw;
+    width: 100%;
+    @media only screen and (max-width: 768px){
+        padding: 0 5vw;
+    }
+    @media only screen and (max-width: 425px){
+        padding: 0 2vw;
+    }
+
+}
+
+@import "./header.scss";
+@import "./about-us.scss";
+@import "./pages-shared.scss";
+@import "./footer.scss";
